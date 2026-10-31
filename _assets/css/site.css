@@ -10,7 +10,7 @@
   --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, serif;
   --font-body: "Source Sans 3", "Source Sans Pro", "Segoe UI", sans-serif;
   --space: clamp(1rem, 2.5vw, 2rem);
-  --max: 48rem;
+  --max: 58rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -87,10 +87,10 @@ a {
   margin: 0 auto;
 }
 
-@media (min-width: 680px) {
+@media (min-width: 768px) {
   .billboard {
     grid-template-columns: minmax(0, 1fr) auto;
-    gap: calc(var(--space) * 2);
+    gap: calc(var(--space) * 2.5);
   }
 }
 
@@ -115,15 +115,17 @@ a {
 .billboard__name {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 7vw, 4.25rem);
+  font-size: clamp(2.5rem, 5.5vw, 3.85rem);
   font-weight: 600;
-  line-height: 1.05;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--ink);
+  white-space: nowrap;
 }
 
 .billboard__tagline {
   margin: 1.15rem 0 0;
+  max-width: 36rem;
   font-size: clamp(1.05rem, 2vw, 1.25rem);
   color: var(--ink-muted);
   line-height: 1.6;
@@ -140,7 +142,7 @@ a {
 .billboard__photo {
   margin: 0;
   justify-self: center;
-  width: min(100%, 10.5rem);
+  width: min(100%, 12rem);
 }
 
 .billboard__photo img {
@@ -200,6 +202,7 @@ a {
   font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none;
+  white-space: nowrap;
   transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease, opacity 160ms ease;
 }
 
