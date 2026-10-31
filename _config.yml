@@ -1,4 +1,3 @@
-# theme: jekyll-theme-slate
 url: https://dai-nguyen.com
 assets:
   digest: false
@@ -6,25 +5,5 @@ assets:
     - _assets/css
     - _assets/js
     - _assets/imgs
-    - _assets/Josefin_Sans
-    - _assets/webfonts
 include:
-    - _assets
-    - _projects
-uncss:
-  stylesheets:            # a list of stylesheets to be processed; mandatory
-    - _assets/css
-  files:                  # html files to consider, globs are supported; default: **/*.html
-    - "**/*.html"
-    - "**/*.htm"
-  compress:               # compress resulting css with sass; default: false
-    css:  sass
-    js:   uglifier
-  ignore:                 # always keep rules for these selectors; default: none
-    - ".is-loading"
-    - "#titleBar"
-  media:                  # additional media queries to consider; default: undefined
-    - print
-  timeout: 30             # how long to wait for the JS to be loaded in milliseconds; default: undefined
-  banner: false           # should the output include a banner comment; default: undefined
- 
+  - _assets
