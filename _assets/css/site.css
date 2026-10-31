@@ -104,7 +104,7 @@ a {
 .billboard__photo {
   margin: 0;
   justify-self: center;
-  width: min(100%, 20rem);
+  width: min(100%, 11.5rem);
 }
 
 .billboard__photo img {
@@ -113,7 +113,8 @@ a {
   height: auto;
   aspect-ratio: 1;
   object-fit: cover;
-  border-radius: 0.35rem;
+  object-position: center 20%;
+  border-radius: 50%;
   border: 1px solid var(--line);
   background: var(--bg-elevated);
 }
