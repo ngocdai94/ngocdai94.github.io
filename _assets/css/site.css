@@ -28,13 +28,8 @@ html {
     scroll-behavior: auto;
   }
 
-  .billboard__name,
-  .billboard__tagline,
-  .billboard__ctas,
-  .proof {
-    animation: none !important;
-    opacity: 1 !important;
-    transform: none !important;
+  .btn {
+    transition: none;
   }
 }
 
@@ -79,7 +74,6 @@ a {
   line-height: 1.05;
   letter-spacing: -0.02em;
   color: var(--ink);
-  animation: rise 700ms ease-out both;
 }
 
 .billboard__tagline {
@@ -87,7 +81,6 @@ a {
   max-width: 34rem;
   font-size: clamp(1.1rem, 2.4vw, 1.35rem);
   color: var(--ink-muted);
-  animation: rise 700ms ease-out 80ms both;
 }
 
 .billboard__ctas {
@@ -95,7 +88,6 @@ a {
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 2rem;
-  animation: rise 700ms ease-out 160ms both;
 }
 
 .btn {
@@ -146,7 +138,6 @@ a {
   display: grid;
   gap: calc(var(--space) * 2);
   border-top: 1px solid var(--line);
-  animation: rise 800ms ease-out 120ms both;
 }
 
 @media (min-width: 800px) {
@@ -236,13 +227,4 @@ a {
   border-top: 1px solid var(--line);
 }
 
-@keyframes rise {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+/* Reserved for intentional motion; keep first paint fully opaque for recruiters. */
