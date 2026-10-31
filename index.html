@@ -4,12 +4,42 @@ layout: default
 
 <main>
   <section class="billboard" aria-label="Introduction">
-    <h1 class="billboard__name">Dai Nguyen</h1>
-    <p class="billboard__tagline">Software Engineer at NCR Voyix in Atlanta — building secure, scalable full-stack systems.</p>
-    <div class="billboard__ctas">
-      <a class="btn btn--primary" href="https://linkedin.dai-nguyen.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a class="btn btn--secondary" href="https://dlresume.dai-nguyen.com" download="Dai Nguyen - Resume">Resume</a>
+    <div class="billboard__copy">
+      <h1 class="billboard__name">Dai Nguyen</h1>
+      <p class="billboard__tagline">Software Engineer at NCR Voyix in Atlanta — building secure, scalable full-stack systems.</p>
+      <div class="billboard__ctas">
+        <a class="btn btn--primary" href="https://linkedin.dai-nguyen.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="btn btn--secondary" href="https://dlresume.dai-nguyen.com" download="Dai Nguyen - Resume">Resume</a>
+      </div>
     </div>
+    <figure class="billboard__photo">
+      <picture>
+        <source type="image/webp" srcset="/_assets/imgs/profile.webp">
+        <img
+          src="/_assets/imgs/profile.jpg"
+          width="480"
+          height="480"
+          alt="Portrait of Dai Nguyen"
+          decoding="async"
+          fetchpriority="high">
+      </picture>
+    </figure>
+  </section>
+
+  <section class="skills" aria-label="Core skills">
+    <h2 class="skills__heading">Core stack</h2>
+    <ul class="skills__list">
+      <li>Java</li>
+      <li>Spring Boot</li>
+      <li>TypeScript</li>
+      <li>NestJS</li>
+      <li>React</li>
+      <li>REST APIs</li>
+      <li>MySQL</li>
+      <li>GCP</li>
+      <li>Jenkins</li>
+      <li>GitHub</li>
+    </ul>
   </section>
 
   <section class="proof" aria-label="Experience and highlights">
@@ -26,6 +56,18 @@ layout: default
         <h3 class="role__title">Software Engineer</h3>
         <p class="role__org">Macy’s</p>
         <p class="role__summary">Delivered backend and frontend features for warehouse systems and led an on-premises to Google Cloud Platform migration alongside day-to-day product work.</p>
+      </article>
+
+      <h2 class="education__heading">Education</h2>
+      <article class="role">
+        <p class="role__dates">2016 – 2018</p>
+        <h3 class="role__title">B.S. Electrical Engineering</h3>
+        <p class="role__org">Seattle University</p>
+      </article>
+      <article class="role">
+        <p class="role__dates">2018 – 2021</p>
+        <h3 class="role__title">Web Development &amp; Network Administrator Certificate</h3>
+        <p class="role__org">Seattle Central College</p>
       </article>
     </div>
 
