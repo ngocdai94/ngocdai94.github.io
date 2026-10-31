@@ -281,9 +281,10 @@ a {
 
 .proof__sidebar {
   min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+}
+
+.sidebar-card + .sidebar-card {
+  margin-top: 1.25rem;
 }
 
 .proof h2 {
