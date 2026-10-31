@@ -71,15 +71,6 @@ a {
   margin: 0 auto;
 }
 
-.billboard__eyebrow {
-  margin: 0 0 0.75rem;
-  font-size: 0.85rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--ink-muted);
-  font-weight: 500;
-}
-
 .billboard__name {
   margin: 0;
   font-family: var(--font-display);
@@ -87,6 +78,7 @@ a {
   font-weight: 600;
   line-height: 1.05;
   letter-spacing: -0.02em;
+  color: var(--ink);
   animation: rise 700ms ease-out both;
 }
 
