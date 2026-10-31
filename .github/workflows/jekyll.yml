@@ -27,19 +27,29 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: true
 
+      - name: Build with Jekyll (Verification for non-pages repo)
+        if: github.repository != 'ngocdai94/ngocdai94.github.io'
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
       - name: Setup Pages
+        if: github.repository == 'ngocdai94/ngocdai94.github.io'
         id: pages
         uses: actions/configure-pages@v5
 
       - name: Build with Jekyll
+        if: github.repository == 'ngocdai94/ngocdai94.github.io'
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
 
       - name: Upload artifact
+        if: github.repository == 'ngocdai94/ngocdai94.github.io'
         uses: actions/upload-pages-artifact@v3
 
   deploy:
+    if: github.repository == 'ngocdai94/ngocdai94.github.io'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
